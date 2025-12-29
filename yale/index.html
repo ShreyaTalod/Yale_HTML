@@ -299,6 +299,56 @@
 	</section>
 	<!-- END TOPIC -->		
 
+<style>
+/* Force feature cards to always look the same */
+.single_feature_one,
+.single_feature_one:hover,
+.single_feature_one:active,
+.single_feature_one:focus,
+.single_feature_one:focus-visible,
+.single_feature_one.active {
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important;
+}
+
+/* Kill blue overlay layer */
+.single_feature_one::before,
+.single_feature_one::after,
+.single_feature_one:hover::before,
+.single_feature_one:hover::after,
+.single_feature_one.active::before,
+.single_feature_one.active::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Remove focus outline from links */
+.single_feature_one a,
+.single_feature_one a:hover,
+.single_feature_one a:active,
+.single_feature_one a:focus,
+.single_feature_one a:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Lock text & icon colors */
+.single_feature_one h2,
+.single_feature_one h2 a,
+.single_feature_one p,
+.single_feature_one span {
+  color: inherit !important;
+}
+
+.marketing_content_area .single_feature_one {
+  border: none !important;
+}
+</style>
+
+
 	<!-- START WHY CHOOSE US-->
 	<section class="marketing_content_area section-padding">
 	   <div class="container">
@@ -356,7 +406,7 @@
 					<div class="single_feature_one">
 						<div class="sf_top">
 							<span class="ti-email ss_six"></span>
-							<h2><a href="#" target="_blank">24/7 Strong Support</a></h2>
+							<h2><a href="#" target="_blank">24/7 Strong<br /> Support</a></h2>
 						</div>		
 						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor ut labore.</p>
 					</div>					
