@@ -117,9 +117,7 @@
 					<div class="home_lc">
 						
 					</div>
-					<div class="call_to_action">
-						<a class="btn_two" href="register.html">Login / Register</a>
-					</div><!--- END SOCIAL PROFILE -->					
+					<!--- END SOCIAL PROFILE -->					
 				</div><!--- END Col -->
 			</div><!--- END ROW -->
 		</div><!--- END CONTAINER -->
@@ -195,8 +193,8 @@
 										<input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required="required">
 									</div>
 									<div class="form-group col-md-12">
-										<label for="">Your Subject</label>
-										<input type="text" id="subject" name="subject" class="form-control" placeholder="Enter subject" required="required">
+										<label for="">Your Phone Number</label>
+										<input type="text" id="phone" name="phone" class="form-control" placeholder="Enter phone number" required="required">
 									</div>
 									<div class="form-group col-md-12">
 										<label for="">Your Message</label>
@@ -233,15 +231,8 @@
 				</div><!--- END COL -->						
 				<div class="col-lg-3 col-sm-6 col-xs-12">
 					<div class="single_footer">
-						<h4>Courses</h4>
-						<ul>
-							<li><a href="#0">Creative Writing</a></li>
-							<li><a href="#0">Digital Marketing</a></li>
-							<li><a href="#0">SEO Business</a></li>
-							<li><a href="#0">Social Marketing</a></li>
-							<li><a href="#0">Graphic Design</a></li>
-							<li><a href="#0">Website Development</a></li>
-						</ul>
+						
+						
 					</div>
 				</div><!--- END COL -->	
 				<div class="col-lg-3 col-sm-6 col-xs-12">
@@ -278,19 +269,26 @@
 					</div>
 				</div><!--- END COL -->	
 			</div><!--- END ROW -->		
-			<div class="row fc">
-				<div class="col-lg-6 col-sm-6 col-xs-12">
+			<div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-logo" style="margin-bottom: -3px;">
+								<a href="https://www.fundsweb.in" target="_blank" rel="noopener noreferrer">
+									<img src="assets/images/Fundsweb1.png" alt="Fundsweb Logo" style="height: 30px;">
+								</a>
+							</div>
+                        <div class="col-md-12">
+                            
+                            <div class="col-lg-6 col-sm-6 col-xs-12">
 					<div class="footer_copyright">
 						<p>&copy; Powered by Fundsweb.in</p>
 					</div>
 				</div>
-				
-				<div class="col-lg-6 col-sm-6 col-xs-12">
-					<div class="footer_menu">
+                        </div>
+                    </div>
+                </div>
+            </div><!-- END COL -->
 						
-					</div>
-				</div><!-- END COL -->
-			</div>				
 		</div><!--- END CONTAINER -->
 	</div>
 	<!-- END FOOTER -->			
@@ -386,7 +384,7 @@
       domain: "fundsmintindia.com",  // Hardcoded as per requirement
       Name:    $("#username").val().trim(),
       email:   $("#email").val().trim(),
-      subject:   $("#subject").val().trim(),
+      phone:   $("#phone").val().trim(),
       message: $("#message").val().trim()
     };
     
